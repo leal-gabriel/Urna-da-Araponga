@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Votação</h1>
+    <div class="voting-area">
+        <label for="voto">Selecione seu candidato:</label>
+        <div id="candidates" class="candidates-container">
+            <!-- Os candidatos serão carregados dinamicamente aqui -->
+        </div>
+        <button id="confirmVote">Confirmar Voto</button>
+        <button id="endVoting">Encerrar Votação</button>
+    </div>
+
+    <div id="results" class="hidden">
+        <h2>Resultados</h2>
+        <ul id="resultsList"></ul>
+    </div>
+    <div id="message"></div>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

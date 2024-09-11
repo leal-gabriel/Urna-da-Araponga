@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Candidatos</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cadastro de Candidatos</h1>
+    <form id="candidateForm">
+        <label for="name">Nome do Candidato:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="party">Partido Escoteiro:</label>
+        <select id="party" name="party" required>
+            <option value="">Selecione um Partido</option>
+            <option value="Mangusto">Mangusto</option>
+            <option value="Cascavel">Cascavel</option>
+            <option value="Lobo">Lobo</option>
+        </select>
+
+        <label for="proposal">Proposta Eleitoral:</label>
+        <input type="text" id="proposal" name="proposal" required>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="local">Local:</label>
+        <input type="text" id="local" name="local" required>
+
+        <button type="submit">Cadastrar Candidato</button>
+    </form>
+
+    <div id="message"></div>
+
+    <a href="../votacao/votacao.html">Ir para a página de votação</a>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
